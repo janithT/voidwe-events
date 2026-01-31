@@ -21,39 +21,39 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Intro
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+<p>  This is an API-based Laravel application designed to ingest and manage event data from devices. 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The system is built in a SaaS-style, multi-tenant-friendly architecture. </p>
 
-## Laravel Sponsors
+## Technology used
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Laravel Framework 12
+- API Key–based authentication (X-API-KEY)
+- Middleware for authentication and request handling
+- Form Request validation classes
+- Service layer for business logic
+- Eloquent ORM with migrations and models
+- Laravel Queues & Jobs
+- Custom Laravel logging channels
 
-### Premium Partners
+## Key Features
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Event ingestion API (POST /api/events)
+- Event listing API with filters and pagination (GET /api/events)
+- API key–based authentication
+- Idempotent event handling
+- Background job processing
+- Multi-tenant–ready data model
+- Dedicated logging channel for event processing
 
-## Contributing
+## How to run
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Clone the project.
+- Run composer install.
+- php artisan migrate.
+- php artisan serve. 
+- php artisan queue:work for start background process.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
