@@ -56,4 +56,7 @@ The system is built in a SaaS-style, multi-tenant-friendly architecture. </p>
 - php artisan serve. 
 - php artisan queue:work for start background process.
 
+## Time
 
+- Setup and implementation - 3 hours
+- Documentation - 1.5 hours
