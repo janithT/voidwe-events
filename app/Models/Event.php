@@ -28,7 +28,19 @@ class Event extends Model
     // create
     public function createEvents(array $data): Event
     {
-        return $this->create($data);
+        // better for avoiding duplicates
+        return $this->updateOrCreate(
+        [
+            'tenant_key' => $data['tenant_key'],
+            'event_uid'  => $data['event_uid'],
+        ],
+        [
+            'device_uid'  => $data['device_uid'],
+            'type'        => $data['type'],
+            'occurred_at' => $data['occurred_at'],
+            'payload'     => $data['payload'],
+        ]
+    );
     }
 
     // get with filter
