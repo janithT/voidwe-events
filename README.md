@@ -60,3 +60,8 @@ The system is built in a SaaS-style, multi-tenant-friendly architecture. </p>
 
 - Setup and implementation - 3 hours
 - Documentation - 1.5 hours
+
+## Sample requests
+
+- GET : /api/v1/events?tenant_key=acme&device_uid=DEV-001&type=location
+- POST : /api/v1/events/
